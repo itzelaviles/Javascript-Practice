@@ -1,21 +1,38 @@
+//CONST = A VARIABLE THAT CANT BE CHANGED 
+// let pi = 3.1416;
+// pi is a constant number that should not be changed so we make it constant to avoid making errors on the calculations and they tend to be written in uppercase.
+const PI = 3.1416
+let radius;
+let circumference;
+
+// radius = window.prompt("Enter the radius of a circle");
+// circumference = 2 * pi * Number(radius);
+// console.log(circumference);
+
+document.getElementById("submitBtn").onclick = function(){
+    radius = document.getElementById("radius").value;
+    circumference = 2 * PI * Number(radius)
+    document.getElementById("result").textContent = `Circumference is: ${circumference} cm`;
+}
+
 //TYPE CONVERSION
-let age = window.prompt("How old are you?");
-console.log(age, typeof age);
-age = Number(age);
-age += 1;
-console.log(age, typeof age);
+// let age = window.prompt("How old are you?");
+// console.log(age, typeof age);
+// age = Number(age);
+// age += 1;
+// console.log(age, typeof age);
 
-let x = 'pizza';
-let y = '522';
-let z = '';
+// let x = 'pizza';
+// let y = '522';
+// let z = '';
 
-x = Number(x);
-y = String(y);
-z = Boolean(z);
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z);
 
-console.log(x, typeof x);
-console.log(y, typeof x);
-console.log(z, typeof x);
+// console.log(x, typeof x);
+// console.log(y, typeof x);
+// console.log(z, typeof x);
 
 //ASSIGNGING CONTENT TO HMTL ELEMENTS
 /*
