@@ -1,3 +1,22 @@
+//TYPE CONVERSION
+let age = window.prompt("How old are you?");
+console.log(age, typeof age);
+age = Number(age);
+age += 1;
+console.log(age, typeof age);
+
+let x = 'pizza';
+let y = '522';
+let z = '';
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof x);
+console.log(z, typeof x);
+
 //ASSIGNGING CONTENT TO HMTL ELEMENTS
 /*
 document.getElementById("myH1").textContent = `Hello`;
@@ -57,10 +76,10 @@ console.log(students);
 */
 
 //ACCEPT USER INPUT
-let username;
+// let username;
 // username = window.prompt("What's your username? ");
 // console.log(username);
-document.getElementById("submitBtn").onclick = function(){
-    username = document.getElementById("usernameInput").value;
-    document.getElementById("h1Welcome").textContent = `Hello ${username}!!`;
-}
+// document.getElementById("submitBtn").onclick = function(){
+//     username = document.getElementById("usernameInput").value;
+//     document.getElementById("h1Welcome").textContent = `Hello ${username}!!`;
+// }
