@@ -56,3 +56,11 @@ let students = 30;
 console.log(students);
 */
 
+//ACCEPT USER INPUT
+let username;
+// username = window.prompt("What's your username? ");
+// console.log(username);
+document.getElementById("submitBtn").onclick = function(){
+    username = document.getElementById("usernameInput").value;
+    document.getElementById("h1Welcome").textContent = `Hello ${username}!!`;
+}
