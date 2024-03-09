@@ -1,19 +1,68 @@
+//MATH OBJECT
+
+
+let x = 3;
+let y = 2;
+let z;
+let w = 1;
+
+z = Math.round(x);
+console.log(z);
+//round down
+z = Math.floor(x);
+console.log(z);
+//round up
+z = Math.ceil(x);
+console.log(z);
+//remove all decimal
+z = Math.trunc(x);
+console.log(z);
+//raise to the power
+z = Math.pow(y,y);
+console.log(z);
+//square root
+z = Math.sqrt(y);
+console.log(z);
+//natural logarithm
+z = Math.log(x);
+console.log(z);
+//sine of a number in radians
+z = Math.sin(x);
+console.log(z);
+//cosine of a number in radians
+z = Math.cos(x);
+console.log(z);
+//tangent of a number in radians
+z = Math.tan(x);
+console.log(z);
+//absolute value of number
+z = Math.abs(x);
+console.log(z);
+//sign of number
+z = Math.sign(x);
+console.log(z);
+
+let max = Math.max(w,x,y);
+console.log(max);
+let min = Math.min(w,x,y);
+console.log(min);
+
 //CONST = A VARIABLE THAT CANT BE CHANGED 
 // let pi = 3.1416;
 // pi is a constant number that should not be changed so we make it constant to avoid making errors on the calculations and they tend to be written in uppercase.
-const PI = 3.1416
-let radius;
-let circumference;
+// const PI = 3.1416
+// let radius;
+// let circumference;
 
 // radius = window.prompt("Enter the radius of a circle");
 // circumference = 2 * pi * Number(radius);
 // console.log(circumference);
 
-document.getElementById("submitBtn").onclick = function(){
-    radius = document.getElementById("radius").value;
-    circumference = 2 * PI * Number(radius)
-    document.getElementById("result").textContent = `Circumference is: ${circumference} cm`;
-}
+// document.getElementById("submitBtn").onclick = function(){
+//     radius = document.getElementById("radius").value;
+//     circumference = 2 * PI * Number(radius)
+//     document.getElementById("result").textContent = `Circumference is: ${circumference} cm`;
+// }
 
 //TYPE CONVERSION
 // let age = window.prompt("How old are you?");
